@@ -21,7 +21,7 @@
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="./programmes.html">PROGRAMMES</a></li>
   <li><a href="./departments.html">DEPARTMENTS</a></li>
-  
+
 
 </ul>
 <ul id="dropdown2" class="dropdown-content" style="width: 300px !important">
@@ -38,11 +38,11 @@
 </ul>
 
 <ul id="dropdown4" class="dropdown-content" style="width: 300px !important">
-  <li><a href="./aboutus.html">About Institute</a></li>
-  <li><a href="./message.html">Message From Director</a></li>
-  <li><a href="./message.html">Message From Dean</a></li>
-  <li><a href="./message.html">Campus Aceessblity</a></li>
-  <li><a href="./mission.html ">Vision & Mission</a></li>
+  <li><a class="toggle" data-show="about_inst">About Institute</a></li>
+  <li><a class="toggle" data-show="msg_dir">Message From Director</a></li>
+  <li><a class="toggle" data-show="msg_dean">Message From Dean</a></li>
+  <li><a class="toggle" data-show="campus">Campus Aceessblity</a></li>
+  <li><a class="toggle" data-show="mission">Vision & Mission</a></li>
 
 </ul>
 
@@ -53,7 +53,7 @@
 
 </ul>
 
-<nav  style="background-color:#001333;" role="navigation">
+<nav style="background-color:#001333;" role="navigation">
   <div class="nav-wrapper">
     <div class="nav-wrapper">
       <a class="brand-logo" href="https://nitdgp.ac.in">
@@ -63,8 +63,8 @@
         <li>Placement Cell NIT Durgapur</li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="./index.html"><i class="material-icons right">home</i></a></li>
-        <li><a class="dropdown-trigger" href="./index.html" data-target="dropdown4" id="dropdowner3" >About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="home_btn"><i class="material-icons right">home</i></a></li>
+        <li><a class="dropdown-trigger" data-target="dropdown4" id="dropdowner3" >About Us<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown2" id="dropdowner1" href="./recuirter.html">Recruiters<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown5" id="dropdowner4" href="./recuirter.html">Statistics<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" id="dropdowner" >Academics<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -81,7 +81,7 @@
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
             <li >
-              <a class="collapsible-header">About Us<i class="material-icons right">arrow_drop_down</i></a>
+              <a class="collapsible-header" id="about_button">About Us<i class="material-icons right">arrow_drop_down</i></a>
               <div class="collapsible-body">
                 <ul>
                   <li><a href="./aboutus.html">About Institute</a></li>
@@ -89,13 +89,13 @@
                   <li><a href="./message.html">Message From Dean</a></li>
                   <li><a href="./message.html">Campus Aceessblity</a></li>
                   <li><a href="./mission.html ">Vision & Mission</a></li>
-                 
+
                 </ul>
               </div>
             </li>
           </ul>
         </li>
-  
+
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
             <li >
@@ -104,14 +104,14 @@
                 <ul>
                   <li><a href="./stats2020.html ">STATS 2020</a></li>
                   <li><a href="./stats2019.html">STATS 2019</a></li>
-             
+
                 </ul>
               </div>
             </li>
           </ul>
         </li>
-  
-        
+
+
 
         <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
@@ -143,7 +143,7 @@
           </li>
         </ul>
       </li>
-     
+
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li>
@@ -152,7 +152,7 @@
               <ul>
                 <li><a href="./contact.html">Contacts</a></li>
                 <li><a href="./team.html ">Team</a></li>
-               
+
               </ul>
             </div>
           </li>
@@ -160,165 +160,243 @@
       </li>
 
       </ul>
-      
+
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </div>
 </nav>
   <!-- Home -->
 
-  <div class="first">
-    <div class="row">
-       <div class="col s12 l8">
-          <section class="black">
-             <div class="carousel carousel-slider" data-indicators="true">
-                <div class="carousel-fixed-item">
-                   <div class="container">
-                      <h1 class="white-text">Materialize Carousel</h1>
-                   </div>
-                </div>
-                <div class="carousel-item red lighten-2 white-text" href="#one!">
-                   <div class="container">
-                      <h2>First Slide</h2>
-                      <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
-                   </div>
-                </div>
-                <div class="carousel-item amber darken-2 white-text" href="#two!">
-                   <div class="container">
-                      <h2>Second Slide</h2>
-                      <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
-                   </div>
-                </div>
-                <div class="carousel-item green white-text" href="#three!">
-                   <div class="container">
-                      <h2>Third Slide</h2>
-                      <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
-                   </div>
-                </div>
-                <div class="carousel-item blue white-text" href="#four!">
-                   <div class="container">
-                      <h2>Fourth Slide</h2>
-                      <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
-                   </div>
-                </div>
-             </div>
-          </section>
-       </div>
-       <div class="col s12 l4">
-          <div class="col s12">
-             <ul class="tabs">
-                <li class="tab col s6"><a href="#test1">UPDATES</a></li>
-                <li class="tab col s6"><a class="active" href="#test2">NEWS</a></li>
+<div class="" id="home_content">
+
+<div class="home">
+    <div class="first">
+      <div class="row">
+         <div class="col s12 l8">
+            <section class="black">
+               <div class="carousel carousel-slider" data-indicators="true">
+                  <div class="carousel-fixed-item">
+                     <div class="container">
+                        <h1 class="white-text">Materialize Carousel</h1>
+                     </div>
+                  </div>
+                  <div class="carousel-item red lighten-2 white-text" href="#one!">
+                     <div class="container">
+                        <h2>First Slide</h2>
+                        <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+                     </div>
+                  </div>
+                  <div class="carousel-item amber darken-2 white-text" href="#two!">
+                     <div class="container">
+                        <h2>Second Slide</h2>
+                        <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+                     </div>
+                  </div>
+                  <div class="carousel-item green white-text" href="#three!">
+                     <div class="container">
+                        <h2>Third Slide</h2>
+                        <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+                     </div>
+                  </div>
+                  <div class="carousel-item blue white-text" href="#four!">
+                     <div class="container">
+                        <h2>Fourth Slide</h2>
+                        <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <div class="col s12 l4">
+            <div class="col s12">
+               <ul class="tabs">
+                  <li class="tab col s6"><a href="#test1">UPDATES</a></li>
+                  <li class="tab col s6"><a class="active" href="#test2">NEWS</a></li>
+               </ul>
+            </div>
+            <div id="test1" class="col s12">
+               <ul>
+                  <li>
+                     >> Etiam porta sem malesuada magna mollis euismod.
+                  </li>
+                  <li>
+                     >> Etiam porta sem malesuada magna mollis euismod.
+                  </li>
+                  <li>
+                     >> Etiam porta sem malesuada magna mollis euismod.
+                  </li>
+                  <li>
+                     >> Etiam porta sem malesuada magna mollis euismod.
+                  </li>
+               </ul>
+            </div>
+            <div id="test2" class="col s12">
+              <ul>
+                <li>
+                   >> Etiam porta sem malesuada magna mollis euismod.
+                </li>
+                <li>
+                   >> Etiam porta sem malesuada magna mollis euismod.
+                </li>
+                <li>
+                   >> Etiam porta sem malesuada magna mollis euismod.
+                </li>
+                <li>
+                   >> Etiam porta sem malesuada magna mollis euismod.
+                </li>
+                <li>
+                  >> Etiam porta sem malesuada magna mollis euismod.
+               </li>
+               <li>
+                  >> Etiam porta sem malesuada magna mollis euismod.
+               </li>
              </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container">
+     <hr>
+     <br>
+    <div class="section" id="about">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Achivemets</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+
+            </p>
+            <a   href="./achivement.html" class="btn-small" style="background-color: #2196f3" >Know More</a>
           </div>
-          <div id="test1" class="col s12">
-             <ul>
-                <li>
-                   >> Etiam porta sem malesuada magna mollis euismod.
-                </li>
-                <li>
-                   >> Etiam porta sem malesuada magna mollis euismod.
-                </li>
-                <li>
-                   >> Etiam porta sem malesuada magna mollis euismod.
-                </li>
-                <li>
-                   >> Etiam porta sem malesuada magna mollis euismod.
-                </li>
-             </ul>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">book</i></h2>
+            <h5 class="center">Departments</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+
+            </p>
+            <a  href="./departments.html" class="btn-small" style="background-color: #2196f3" >Know More</a>
           </div>
-          <div id="test2" class="col s12">
-            <ul>
-              <li>
-                 >> Etiam porta sem malesuada magna mollis euismod.
-              </li>
-              <li>
-                 >> Etiam porta sem malesuada magna mollis euismod.
-              </li>
-              <li>
-                 >> Etiam porta sem malesuada magna mollis euismod.
-              </li>
-              <li>
-                 >> Etiam porta sem malesuada magna mollis euismod.
-              </li>
-              <li>
-                >> Etiam porta sem malesuada magna mollis euismod.
-             </li>
-             <li>
-                >> Etiam porta sem malesuada magna mollis euismod.
-             </li>
-           </ul>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">extension</i></h2>
+            <h5 class="center">Placement Statistics</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers..</p>
+            <a  href="./stats2020.html" class="btn-small" style="background-color: #2196f3" >Know More</a>
           </div>
-       </div>
+        </div>
+      </div>
+
     </div>
- </div>
+  </div>
 
- <div class="container">
-   <hr>
-   <br>
-  <div class="section" id="about">
 
-    <!--   Icon Section   -->
-    <div class="row">
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-          <h5 class="center">Achivemets</h5>
+   <div class="container">
+     <hr>
+     <br>
+    <div class="container-1" style="background-color:#eceff1 ;">
+      <h4  class="blue-text text-darken-2 center align"> Overview</h4>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-          <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
-        
-          </p>
-          <a   href="./achivement.html" class="btn-small" style="background-color: #2196f3" >Know More</a>
-        </div>
-      </div>
+    Why do we use it?
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="material-icons">book</i></h2>
-          <h5 class="center">Departments</h5>
+    Why do we use it?
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+  </p>
 
-          <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
-
-          </p>
-          <a  href="./departments.html" class="btn-small" style="background-color: #2196f3" >Know More</a>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="material-icons">extension</i></h2>
-          <h5 class="center">Placement Statistics</h5>
-
-          <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers..</p>
-          <a  href="./stats2020.html" class="btn-small" style="background-color: #2196f3" >Know More</a>
-        </div>
-      </div>
-    </div>
-
+  </div>
   </div>
 </div>
 
+<div class="" id="about_section">
+    <!--about-->
+    <div class="container" id="about_inst">
 
- <div class="container">
-   <hr>
-   <br>
-  <div class="container-1" style="background-color:#eceff1 ;">
-    <h4  class="blue-text text-darken-2 center align"> Overview</h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      <div class="container-1" style="background-color:#eceff1 ;">
+          <h4  class="blue-text text-darken-2 center-align">About Us </h4>
 
-  Why do we use it?
-  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      <p>
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+          versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </p>
+      <p>
 
-  Why do we use it?
-  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-</p>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+      </p>
+
+
+      </div>
+
+    </div>
+
+    <!--messages-->
+
+    <div class="container" id="msg_dean">
+      <div class="container-1" style="background-color:#eceff1 ;" >
+          <div class="row">
+
+              <div class="col s12 l3">
+                  <img src="./assets/f.png" />
+              </div>
+                <div class="col s12 l9">
+                  <h4  class="blue-text text-darken-2 center-align">Message From Dean</h4>
+                   <p>
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                      versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                  </p>
+               </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="container" id="msg_dir">
+      <div class="container-1" style="background-color:#eceff1 ;" >
+          <div class="row">
+              <div class="col s12 l3">
+                  <img src="./assets/f.png"/>
+              </div>
+              <div class="col s12 l9">
+                  <h4  class="blue-text text-darken-2 center-align">Message from Director</h4>
+                   <p>
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                      versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                  </p>
+              </div>
+
+              </div>
+          </div>
+      </div>
+
+    <!--mission-->
+    <div class="container" id="mission">
+      <h4 class="card-panel blue lighten-4"> Vision and mission</h4>
+      <div class="container-1" style="background-color:#eceff1 ;">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+          Why do we use it?
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+      </div>
+    </div>
 
 </div>
+
 </div>
-
-
-
 
 
 
@@ -368,13 +446,31 @@
   </footer>
 
 
-  <!--  Scripts-->
+  <!-- Scripts -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script type="text/javascript">
+
+    $('#about_section').children().hide()
+    document.addEventListener('click', event => {
+    const elem = event.target
+        if (elem.className == 'toggle') {
+            $('.home').children().hide()
+            const cont = elem.getAttribute("data-show")
+            $('#about_section').children().hide()
+            $('#' + cont).show()
+        }
+    })
+    $('.home_btn').click(function(e){
+        $('.home').children().show()
+        $('#about_section').children().hide()
+    })
+
+</script>
 
   </body>
 </html>
