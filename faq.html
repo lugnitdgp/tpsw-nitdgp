@@ -21,7 +21,7 @@
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="./programmes.html">PROGRAMMES</a></li>
   <li><a href="./departments.html">DEPARTMENTS</a></li>
-  
+
 
 </ul>
 <ul id="dropdown2" class="dropdown-content" style="width: 300px !important">
@@ -34,26 +34,26 @@
 
 <ul id="dropdown3" class="dropdown-content" style="width: 300px !important">
   <li><a href="./contact.html">Contacts</a></li>
-  <li><a href="./team.html ">Student Team</a></li>
+  <li><a href="./webteam.html ">Web Team</a></li>
 </ul>
 
 <ul id="dropdown4" class="dropdown-content" style="width: 300px !important">
-  <li><a href="./aboutus.html">About Institute</a></li>
-  <li><a href="./message.html">Message From Director</a></li>
-  <li><a href="./message.html">Message From Dean</a></li>
-  <li><a href="./message.html">Campus Aceessblity</a></li>
-  <li><a href="./mission.html ">Vision & Mission</a></li>
+  <li><a class="toggle" data-show="about_inst">About Institute</a></li>
+  <li><a class="toggle" data-show="msg_dir">Message From Director</a></li>
+  <li><a class="toggle" data-show="msg_dean">Message From Dean</a></li>
+  <li><a class="toggle" data-show="campus">Campus Aceessblity</a></li>
+  <li><a class="toggle" data-show="mission">Vision & Mission</a></li>
 
 </ul>
 
 <ul id="dropdown5" class="dropdown-content" style="width: 300px !important">
-  <li><a href="./stats2020.html ">STATS 2020</a></li>
-  <li><a href="./stats2019.html">STATS 2019</a></li>
+  <li><a href="./statsug.html ">STATS FOR UG</a></li>
+  <li><a href="./statspg.html"> STATS FOR PG</a></li>
 
 
 </ul>
 
-<nav  style="background-color:#001333;" role="navigation">
+<nav style="background-color:#001333;" role="navigation">
   <div class="nav-wrapper">
     <div class="nav-wrapper">
       <a class="brand-logo" href="https://nitdgp.ac.in">
@@ -63,8 +63,7 @@
         <li>Placement Cell NIT Durgapur</li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="./index.html"><i class="material-icons right">home</i></a></li>
-        <li><a class="dropdown-trigger" href="./index.html" data-target="dropdown4" id="dropdowner3" >About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger"  href="index.html" data-target="dropdown4" id="dropdowner3" >Home<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown2" id="dropdowner1" href="./recuirter.html">Recruiters<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown5" id="dropdowner4" href="./recuirter.html">Statistics<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" id="dropdowner" >Academics<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -81,7 +80,7 @@
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
             <li >
-              <a class="collapsible-header">About Us<i class="material-icons right">arrow_drop_down</i></a>
+              <a class="collapsible-header" id="about_button">Home<i class="material-icons right">arrow_drop_down</i></a>
               <div class="collapsible-body">
                 <ul>
                   <li><a href="./aboutus.html">About Institute</a></li>
@@ -89,29 +88,29 @@
                   <li><a href="./message.html">Message From Dean</a></li>
                   <li><a href="./message.html">Campus Aceessblity</a></li>
                   <li><a href="./mission.html ">Vision & Mission</a></li>
-                 
+
                 </ul>
               </div>
             </li>
           </ul>
         </li>
-  
+
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
             <li >
               <a class="collapsible-header">Statistics<i class="material-icons right">arrow_drop_down</i></a>
               <div class="collapsible-body">
                 <ul>
-                  <li><a href="./stats2020.html ">STATS 2020</a></li>
-                  <li><a href="./stats2019.html">STATS 2019</a></li>
-             
+                  <li><a href="./statsug.html ">STATS FOR UG</a></li>
+                  <li><a href="./statspg.html">STATS FOR PG</a></li>
+
                 </ul>
               </div>
             </li>
           </ul>
         </li>
-  
-        
+
+
 
         <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
@@ -143,7 +142,7 @@
           </li>
         </ul>
       </li>
-     
+
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li>
@@ -151,8 +150,8 @@
             <div class="collapsible-body">
               <ul>
                 <li><a href="./contact.html">Contacts</a></li>
-                <li><a href="./team.html ">Team</a></li>
-               
+                <li><a href="./webteam.html ">Web Team</a></li>
+
               </ul>
             </div>
           </li>
@@ -160,13 +159,12 @@
       </li>
 
       </ul>
-      
+
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </div>
 </nav>
   <!-- Home -->
-
 
   <div class="container">
 
@@ -291,6 +289,7 @@
 
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/spa.js"></script>
 
   </body>
 </html>
