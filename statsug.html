@@ -6,9 +6,10 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/stats.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
   <link rel = "icon" href="assets/title.png" type ="icon">
   <title>Placement Cell</title>
 </head>
@@ -29,6 +30,7 @@
   <li><a href="./recuirter.html">Past Recruiters</a></li>
   <li><a href="./achivement.html">Achivemets</a></li>
   <li><a href="./alumni.html">Our Almuni</a></li>
+  <li><a href="./campus.html">Campus Accessblity</a></li>
   <li><a href="./faq.html">FAQ</a></li>
 </ul>
 
@@ -41,7 +43,6 @@
   <li><a class="toggle" data-show="about_inst">About Institute</a></li>
   <li><a class="toggle" data-show="msg_dir">Message From Director</a></li>
   <li><a class="toggle" data-show="msg_dean">Message From Dean</a></li>
-  <li><a class="toggle" data-show="campus">Campus Aceessblity</a></li>
   <li><a class="toggle" data-show="mission">Vision & Mission</a></li>
 
 </ul>
@@ -83,12 +84,10 @@
               <a class="collapsible-header" id="about_button">Home<i class="material-icons right">arrow_drop_down</i></a>
               <div class="collapsible-body">
                 <ul>
-                  <li><a href="./aboutus.html">About Institute</a></li>
-                  <li><a href="./message.html">Message From Director</a></li>
-                  <li><a href="./message.html">Message From Dean</a></li>
-                  <li><a href="./message.html">Campus Aceessblity</a></li>
-                  <li><a href="./mission.html ">Vision & Mission</a></li>
-
+                  <li><a class="toggle" data-show="about_inst">About Institute</a></li>
+                  <li><a class="toggle" data-show="msg_dir">Message From Director</a></li>
+                  <li><a class="toggle" data-show="msg_dean">Message From Dean</a></li>
+                  <li><a class="toggle" data-show="mission">Vision & Mission</a></li>
                 </ul>
               </div>
             </li>
@@ -122,6 +121,7 @@
                 <li><a href="./recuirter.html">Past Recruiters</a></li>
                 <li><a href="./achivement.html">Achivemets</a></li>
                 <li><a href="./alumni.html">Our Almuni</a></li>
+                <li><a href="./campus.html">Campus Accessblity</a></li>
                 <li><a href="./faq.html">FAQ</a></li>
               </ul>
             </div>
@@ -164,7 +164,7 @@
     </div>
   </div>
 </nav>
-
+  <!-- Home -->
 
 <div class="row">
   <div class="col s12 l3 m4">
