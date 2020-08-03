@@ -85,3 +85,4 @@ $('#dropdowner3').dropdown({
    $(document).ready(function(){
     $('.tabs').tabs();
   });
+
