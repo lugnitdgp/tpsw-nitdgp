@@ -45,3 +45,8 @@ nav ul a:hover
   padding-top: 25px;
 
 }
+
+#mob { 
+  display: inline-block;
+  margin-right: 3em;
+}
