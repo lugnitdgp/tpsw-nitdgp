@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+  <link rel = "icon" href="assets/title.png" type ="icon">
+  <title>Placement Cell</title>
+</head>
+
+
+<body>
+
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="./programmes.html">PROGRAMMES</a></li>
+  <li><a href="./departments.html">DEPARTMENTS</a></li>
+
+
+</ul>
+<ul id="dropdown2" class="dropdown-content" style="width: 300px !important">
+  <li><a href="./whyus.html">Why Us ?</a></li>
+  <li><a href="./recuirter.html">Past Recruiters</a></li>
+  <li><a href="./achivement.html">Achivemets</a></li>
+  <li><a href="./alumni.html">Our Almuni</a></li>
+  <li><a href="./campus.html">Campus Accessblity</a></li>
+  <li><a href="./faq.html">FAQ</a></li>
+</ul>
+
+<ul id="dropdown3" class="dropdown-content" style="width: 300px !important">
+  <li><a href="./contact.html">Contacts</a></li>
+  <li><a href="./webteam.html ">Web Team</a></li>
+</ul>
+
+<ul id="dropdown4" class="dropdown-content" style="width: 300px !important">
+  <li><a class="toggle" data-show="about_inst">About Institute</a></li>
+  <li><a class="toggle" data-show="msg_dir">Message From Director</a></li>
+  <li><a class="toggle" data-show="msg_dean">Message From Dean</a></li>
+  <li><a class="toggle" data-show="mission">Vision & Mission</a></li>
+
+</ul>
+
+<ul id="dropdown5" class="dropdown-content" style="width: 300px !important">
+  <li><a href="./statsug.html ">STATS FOR UG</a></li>
+  <li><a href="./statspg.html"> STATS FOR PG</a></li>
+
+
+</ul>
+
+<nav style="background-color:#001333;" role="navigation">
+  <div class="nav-wrapper">
+    <div class="nav-wrapper">
+      <a class="brand-logo" href="https://nitdgp.ac.in">
+        <img style="height:auto;width:60px;" src="assets/nitdgp_logo_white.png" alt="NIT Durgapur Placement Cell">
+      </a>
+      <ul class="hide-on-med-and-down" style="margin-left:4vw;">
+        <li>Placement Cell NIT Durgapur</li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-trigger"  href="index.html" data-target="dropdown4" id="dropdowner3" >Home<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2" id="dropdowner1" href="./recuirter.html">Recruiters<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown5" id="dropdowner4" href="./recuirter.html">Statistics<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" id="dropdowner" >Academics<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown3" id="dropdowner2" >Contact Us<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li style="background-color:#001333;">
+          <div>
+            <a href="/">NIT Durgapur Placements</a>
+          </div>
+        </li>
+
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li >
+              <a class="collapsible-header" id="about_button">Home<i class="material-icons right">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a class="toggle" data-show="about_inst">About Institute</a></li>
+                  <li><a class="toggle" data-show="msg_dir">Message From Director</a></li>
+                  <li><a class="toggle" data-show="msg_dean">Message From Dean</a></li>
+                  <li><a class="toggle" data-show="mission">Vision & Mission</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li >
+              <a class="collapsible-header">Statistics<i class="material-icons right">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="./statsug.html ">STATS FOR UG</a></li>
+                  <li><a href="./statspg.html">STATS FOR PG</a></li>
+
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+
+
+        <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li >
+            <a class="collapsible-header">Recruiter<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="./whyus.html">Why Us ?</a></li>
+                <li><a href="./recuirter.html">Past Recruiters</a></li>
+                <li><a href="./achivement.html">Achivemets</a></li>
+                <li><a href="./alumni.html">Our Almuni</a></li>
+                <li><a href="./campus.html">Campus Accessblity</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Academics<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                  <li><a href="./programmes.html">PROGRAMMES</a></li>
+                  <li><a href="./departments.html">DEPARTMENTS</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Contact Us<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="./contact.html">Contacts</a></li>
+                <li><a href="./webteam.html ">Web Team</a></li>
+
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      </ul>
+
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </div>
+</nav>
+  <!-- Home -->
+
+  <div class="container">
+
+    <div class="container-1" style="background-color:#eceff1 ;">
+        <h4  class="blue-text text-darken-2 center-align">Why Recruit at NITDGP?</h4>
+    
+    <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various 
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </p>
+    
+    <h5  class="blue-text text-darken-2"> Institute Level Projects</h5>
+   
+    
+    <p>
+
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+    </p>
+
+    <h5  class="blue-text text-darken-2">Institute Management</h5>
+
+    <p>
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    </p>
+    
+    <h5  class="blue-text text-darken-2">Summer Internship</h5>
+
+    <p>
+        "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+    </p>
+    
+    <h5  class="blue-text text-darken-2">Research </h5>
+
+    <p>
+        "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+    </p>
+    <h5  class="blue-text text-darken-2">Training </h5>
+
+    <p>
+        "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+    </p>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- Footer -->
+  <footer class="page-footer" style="background-color:#001333;">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <h5 class="white-text">Quick Links</h5>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contact Us</h5>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      ALL RIGHTS RESERVED © 2020. <a class="orange-text text-lighten-3" href="https://nitdgp.ac.in/">NIT Durgapur</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/spa.js"></script>
+
+  </body>
+</html>

@@ -7,15 +7,55 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
   <link rel = "icon" href="assets/title.png" type ="icon">
   <title>Placement Cell</title>
 </head>
 
 
 <body>
-  <!-- Navbar -->
-  <nav class="nav-extended" style="background-color:#001333;" role="navigation">
+
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="./programmes.html">PROGRAMMES</a></li>
+  <li><a href="./departments.html">DEPARTMENTS</a></li>
+
+
+</ul>
+<ul id="dropdown2" class="dropdown-content" style="width: 300px !important">
+  <li><a href="./whyus.html">Why Us ?</a></li>
+  <li><a href="./recuirter.html">Past Recruiters</a></li>
+  <li><a href="./achivement.html">Achivemets</a></li>
+  <li><a href="./alumni.html">Our Almuni</a></li>
+  <li><a href="./campus.html">Campus Accessblity</a></li>
+  <li><a href="./faq.html">FAQ</a></li>
+</ul>
+
+<ul id="dropdown3" class="dropdown-content" style="width: 300px !important">
+  <li><a href="./contact.html">Contacts</a></li>
+  <li><a href="./webteam.html ">Web Team</a></li>
+</ul>
+
+<ul id="dropdown4" class="dropdown-content" style="width: 300px !important">
+  <li><a href="#about">About Institute</a></li>
+  <li><a href="#director">Message From Director</a></li>
+  <li><a href="#dean">Message From Dean</a></li>
+  <li><a href="#vission">Vision & Mission</a></li>
+
+</ul>
+
+<ul id="dropdown5" class="dropdown-content" style="width: 300px !important">
+  <li><a href="./statsug.html ">STATS FOR UG</a></li>
+  <li><a href="./statspg.html"> STATS FOR PG</a></li>
+
+
+</ul>
+
+<nav style="background-color:#001333;" role="navigation">
+  <div class="nav-wrapper">
     <div class="nav-wrapper">
       <a class="brand-logo" href="https://nitdgp.ac.in">
         <img style="height:auto;width:60px;" src="assets/nitdgp_logo_white.png" alt="NIT Durgapur Placement Cell">
@@ -24,12 +64,11 @@
         <li>Placement Cell NIT Durgapur</li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#recruiters">Our Recruiters</a></li>
-        <li><a href="#stats">Statistics</a></li>
-        <li><a href="#why">Why Us?</a></li>
-        <li><a href="#procedure">Procedure</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="dropdown-trigger"  href="index.html" data-target="dropdown4" id="dropdowner3" >Home<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2" id="dropdowner1" href="./recuirter.html">Recruiters<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown5" id="dropdowner4" href="./recuirter.html">Statistics<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" id="dropdowner" >Academics<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown3" id="dropdowner2" >Contact Us<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -38,112 +77,258 @@
             <a href="/">NIT Durgapur Placements</a>
           </div>
         </li>
-        <li><a class="sidenav-close" href="#about">About Us</a></li>
-        <li><a class="sidenav-close" href="#recruiters">Our recruiters</a></li>
-        <li><a class="sidenav-close" href="#stats">Statistics</a></li>
-        <li><a class="sidenav-close" href="#why">Why Us?</a></li>
-        <li><a class="sidenav-close" href="#procedure">Procedure</a></li>
-        <li><a class="sidenav-close" href="#contact">Contact</a></li>
+
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li >
+              <a class="collapsible-header" id="about_button">Home<i id="mob" class="material-icons right">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#about">About Institute</a></li>
+                  <li><a href="#director">Message From Director</a></li>
+                  <li><a href="#dean">Message From Dean</a></li>
+                  <li><a href="#vission">Vision & Mission</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li >
+              <a class="collapsible-header">Statistics<i id="mob" class="material-icons right">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="./statsug.html ">STATS FOR UG</a></li>
+                  <li><a href="./statspg.html">STATS FOR PG</a></li>
+
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+
+
+        <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li >
+            <a class="collapsible-header">Recruiter<i id="mob" class="material-icons right">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="./whyus.html">Why Us ?</a></li>
+                <li><a href="./recuirter.html">Past Recruiters</a></li>
+                <li><a href="./achivement.html">Achivemets</a></li>
+                <li><a href="./alumni.html">Our Almuni</a></li>
+                <li><a href="./campus.html">Campus Accessblity</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Academics<i id="mob" class="material-icons right">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                  <li><a href="./programmes.html">PROGRAMMES</a></li>
+                  <li><a href="./departments.html">DEPARTMENTS</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Contact Us<i id="mob" class="material-icons right">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="./contact.html">Contacts</a></li>
+                <li><a href="./webteam.html ">Web Team</a></li>
+
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+
       </ul>
+
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-
-  </nav>
-  </nav>
-
-  <!-- Home -->
-
-  <!-- intro -->
-
-  <div class="container" style="background-color:#eeeeee;">
-    <h4 class="header center teal-text lighten-2">Overview</h4>
-    <h6 class="header flow-text center black-text" > Since its inception in 1960, Regional Engineering College, Durgapur, as it was known then, strove to inculcate the spirit of academic fervour and excel in different domains of knowledge.
-      It has been elevated to the status of a National Institute of Technology and has since crossed the milestone of its first fifty years of existence as an Institute of National Importance. It has tried to instil in the students the enthusiasm of the past as well as the impulse to reach beyond. With this insignia of excellence, the institute has expanded its horizons and now the students propel themselves to achieve g reat academic feats with a focus on innovation.
-      National Institute of Technology, Durgapur the only one of its kind in West Bengal has surpassed many milestones and created an ambience of academic excellence.
-    </h6>
-    <br></br>
-    <div class="row center">
-      <div class="col s12 m6 l3">
-      </div>
-      <div class="col s12 m6 l3 btn-large waves-effect waves-light">
-        Returning Recruiter ?
-      </div>
-      <div class="col hide-on-med-and-down">
-      <br></br>
-    </div>
-      <div class="col s12 m6 l3 btn-large waves-effect waves-light">
-        New recruiter ?
-      </div>
-    </div>
   </div>
+</nav>
 
 
+<div class="container">
+  
+    <div class="carousel carousel-slider" data-indicators="true">
+       <div class="carousel-fixed-item">
+          <div class="container">
+             <h1 class="white-text">Materialize Carousel</h1>
+          </div>
+       </div>
+       <div class="carousel-item red lighten-2 white-text" href="#one!">
+          <div class="container">
+             <h2>First Slide</h2>
+             <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+          </div>
+       </div>
+       <div class="carousel-item amber darken-2 white-text" href="#two!">
+          <div class="container">
+             <h2>Second Slide</h2>
+             <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+          </div>
+       </div>
+       <div class="carousel-item green white-text" href="#three!">
+          <div class="container">
+             <h2>Third Slide</h2>
+             <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+          </div>
+       </div>
+       <div class="carousel-item blue white-text" href="#four!">
+          <div class="container">
+             <h2>Fourth Slide</h2>
+             <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+          </div>
+       </div>
+    </div>
 
-  <!-- carousel -->
+</div>
 
-  <div class="slider" >
-  <ul class="slides">
-    <li>
-      <img src="assets/carousel1.1.jpeg"> <!-- random image -->
-      <div class="caption center-align">
-      </div>
-    </li>
-    <li>
-      <img src="assets/carousel1.2.jpg"> <!-- random image -->
-      <div class="caption left-align">
-        <h3>Left Aligned Caption</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li>
-    <li>
-      <img src="assets/carousel1.3.jpg"> <!-- random image -->
-      <div class="caption right-align">
+<div class="container">
+  <div class="row">
+        <div class="col s12 m4">
+           <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+              <h5 class="center">Achivemets</h5>
+              <p class="center-align">We did most of the heavy lifting for you to provide a default stylings that content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
+              <div class="center-align">
+              <a   href="./achivement.html" class="center btn-small" style="background-color: #2196f3" >Know More</a>
+            </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+           <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">book</i></h2>
+              <h5 class="center">Departments</h5>
+              <p class="center-align">We did most of the heavy lifting for you to provide a default stylings that content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
+              <div class="center-align">
+              <a  href="./departments.html" class="btn-small" style="background-color: #2196f3" >Know More</a>
+            </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+           <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">extension</i></h2>
+              <h5 class="center">Placement Statistics</h5>
+              <p class="center-align">We did most of the heavy lifting for you to provide a default stylings that content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
+              <div class="center-align">
+              <a  href="./statsug.html" class="btn-small center-align" style="background-color: #2196f3" >Know More</a>
+            </div>
+            </div>
+        </div>
+     </div>
+     <br>
+     <hr>
+ </div>
 
-      </div>
-    </li>
-  </ul>
+<div class="container">
+  <section id="director" class="scrollspy">
+     <div class="container-1" style="background-color:#eceff1 ;" >
+        <div class="row">
+           <div class="col s12 l3">
+              <img src="./assets/f.png"/>
+           </div>
+           <div class="col s12 l9">
+              <h4  class="blue-text text-darken-2 center-align">Message from Director</h4>
+              <p>
+                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                 versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+              </p>
+           </div>
+        </div>
+     </div>
+  </section>
 </div>
 
 
-  <div class="container">
-    <div class="section" id="about">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
+<div class="container">
+  <section id="dean" class="scrollspy">
+     <div class="container-1" style="background-color:#eceff1 ;" >
+        <div class="row">
+           <div class="col s12 l3">
+              <img src="./assets/f.png"/>
+           </div>
+           <div class="col s12 l9">
+              <h4  class="blue-text text-darken-2 center-align">Message from Dean</h4>
+              <p>
+                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                 versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+              </p>
+           </div>
         </div>
+     </div>
+  </section>
+  
+</div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
+<div class="container">
+  <hr>
+  <br>
+  <br>
+  <section id="about" class="scrollspy">
+  <div class="container-1" style="background-color:#eceff1 ;">
+     <h4  class="blue-text text-darken-2 center-align">About Us </h4>
+     <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various 
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+     </p>
+     <p>
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+     </p>
+     <p>
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various 
+      versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+   </p>
+   <p>
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+   </p>
   </div>
+</section>
+</div>
 
-<!-- Footer -->
-  <footer class="page-footer " style="background-color:#001333;">
+
+
+<div class="container">
+  <section id="vission" class="scrollspy">
+  <div class="container-1" style="background-color:#eceff1 ;">
+    <h4  class="blue-text text-darken-2 center-align">Vission & Mission </h4>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+  Why do we use it?
+  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+</p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+  Why do we use it?
+  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+</p>
+</div>
+</section>
+</div>
+
+
+
+
+  <footer class="page-footer" style="background-color:#001333;">
     <div class="container">
       <div class="row">
         <div class="col l3 s12">
@@ -188,10 +373,16 @@
   </footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <!-- Scripts -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/scroll.js"></script>
+
+
 
   </body>
 </html>
