@@ -86,3 +86,23 @@ $('#dropdowner3').dropdown({
     $('.tabs').tabs();
   });
 
+
+  (function($){
+    $(function(){
+  
+      $('.sidenav').sidenav();
+  
+    }); // end of document ready
+  
+  
+  
+    $(document).ready(function(){
+      $('.slider').slider({
+        fullWidth: true,
+       indicators: false,
+      });
+    });
+  
+  
+  })(jQuery); // end of jQuery name space
+  

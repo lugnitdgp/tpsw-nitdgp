@@ -19,12 +19,14 @@
 
 /* Media query for full screen carousel */
 @media only screen and (min-width: 600px) {
-
-  .btn-small{
-    display: none;
+  .slider{
+    width: 80%;
+    margin:auto;
+    margin-top:3vh;
   }
-  
 }
+  
+
 
 nav ul a {
   color: #0060B6;
@@ -38,15 +40,224 @@ nav ul a:hover
    cursor:pointer;  
 }
 
-.dropdown1{
-  min-width: 300 !important;
-}
-.first{
-  padding-top: 25px;
-
+#recruiter{
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
-#mob { 
-  display: inline-block;
-  margin-right: 1em;
+/* MOBILE NAV ICON */
+
+
+/* PLACEMENT PROCESS */
+
+.timeline {
+  position: relative;
+}
+
+.timeline .timeline-event {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.timeline .timeline-event .timeline-content {
+  position: relative;
+  width: calc(50% - 50px);
+}
+
+.timeline .timeline-event::before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #d2d2d2;
+  left: calc(50% - 1px);
+  top: 0;
+}
+
+.timeline .timeline-event::after {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #d2d2d2;
+  left: calc(50% - 1px);
+  top: calc(50% + 30px);
+}
+
+.timeline .timeline-event:first-child::before {
+  display: none;
+}
+
+.timeline .timeline-event:last-child::after {
+  display: none;
+}
+
+.timeline .timeline-event:nth-child(even) .timeline-content {
+  margin-left: calc(50% + 50px);
+}
+
+.timeline .timeline-event:nth-child(odd) .timeline-content {
+  margin-left: 0;
+}
+
+.timeline .timeline-badge {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #d2d2d2;
+  top: calc(50% - 20px);
+  right: calc(50% - 20px);
+  border-radius: 50%;
+  text-align: center;
+  cursor: default;
+}
+
+.timeline .timeline-badge i {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+@media (max-width: 600px) {
+  .timeline .timeline-event .timeline-content {
+    width: calc(100% - 70px);
+  }
+  .timeline .timeline-event::before {
+    left: 19px;
+  }
+  .timeline .timeline-event::after {
+    left: 19px;
+  }
+  .timeline .timeline-event:nth-child(even) .timeline-content {
+    margin-left: 70px;
+  }
+  .timeline .timeline-event:nth-child(odd) .timeline-content {
+    margin-left: 70px;
+  }
+  .timeline .timeline-badge {
+    left: 0;
+  }
+}
+
+/* SLICK */
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider
+{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus
+{
+  outline: none;
+}
+.slick-list.dragging
+{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+  display: table;
+  content: '';
+}
+.slick-track:after
+{
+  clear: both;
+}
+.slick-loading .slick-track
+{
+  visibility: hidden;
+}
+
+.slick-slide
+{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+  float: right;
+}
+.slick-slide img
+{
+  display: block;
+}
+.slick-slide.slick-loading img
+{
+  display: none;
+}
+.slick-slide.dragging img
+{
+  pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+  display: block;
+}
+.slick-loading .slick-slide
+{
+  visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+.customer-logos .slider {
+   height: 200px;
 }
