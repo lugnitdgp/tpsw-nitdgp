@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
   <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+  <link href="css/recruiter.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
   <link rel = "icon" href="assets/title.png" type ="icon">
   <title>Placement Cell</title>
 </head>
@@ -40,10 +42,10 @@
 </ul>
 
 <ul id="dropdown4" class="dropdown-content" style="width: 300px !important">
-  <li><a href="#about">About Institute</a></li>
-  <li><a href="#director">Message From Director</a></li>
-  <li><a href="#dean">Message From Dean</a></li>
-  <li><a href="#vission">Vision & Mission</a></li>
+  <li><a href="./aboutus.html">About Institute</a></li>
+  <li><a href="./message-Dir.html">Message From Director</a></li>
+  <li><a href="./message-Dean.html">Message From Dean</a></li>
+  <li><a href="./mission.html">Vision & Mission</a></li>
 
 </ul>
 
@@ -64,7 +66,8 @@
         <li>Placement Cell NIT Durgapur</li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a class="dropdown-trigger"  href="index.html" data-target="dropdown4" id="dropdowner3" >Home<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="home_btn" href="./index.html"><i class="material-icons right">home</i></a></li>
+        <li><a class="dropdown-trigger"  href="#!" data-target="dropdown4" id="dropdowner3" >About<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown2" id="dropdowner1" href="./recuirter.html">Recruiters<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown5" id="dropdowner4" href="./recuirter.html">Statistics<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" id="dropdowner" >Academics<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -74,20 +77,21 @@
       <ul id="nav-mobile" class="sidenav">
         <li style="background-color:#001333;">
           <div>
-            <a href="/">NIT Durgapur Placements</a>
+            <a href="https://nitdgp.ac.in">NIT Durgapur Placements</a>
           </div>
         </li>
-
+       
+        <li><a class="collapsible-header" href="./index.html">Home</a></li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
             <li >
-              <a class="collapsible-header" id="about_button">Home<i id="mob" class="material-icons right">arrow_drop_down</i></a>
+              <a class="collapsible-header" id="about_button">About<i id="mob" class="material-icons right">arrow_drop_down</i></a>
               <div class="collapsible-body">
                 <ul>
-                  <li><a href="#about">About Institute</a></li>
-                  <li><a href="#director">Message From Director</a></li>
-                  <li><a href="#dean">Message From Dean</a></li>
-                  <li><a href="#vission">Vision & Mission</a></li>
+                  <li><a href="./aboutus.html">About Institute</a></li>
+                  <li><a href="./message-Dir.html">Message From Director</a></li>
+                  <li><a href="./message-Dean.html">Message From Dean</a></li>
+                  <li><a href="./mission.html">Vision & Mission</a></li>
                 </ul>
               </div>
             </li>
@@ -165,45 +169,56 @@
   </div>
 </nav>
 
-
 <div class="container">
+<div class="slider" >
+  <ul class="slides">
+    <li>
+      <img src="assets/c1.jpeg"> <!-- random image -->
+      <div class="caption center-align">
+      </div>
+    </li>
+    <li>
+      <img src="assets/c3.jpg"> <!-- random image -->
+      <div class="caption left-align">
+        <h3>Left Aligned Caption</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+    </li>
+    <li>
+      <img src="assets/c2.jpg"> <!-- random image -->
+      <div class="caption right-align">
 
-    <div class="carousel carousel-slider" data-indicators="true">
-       <div class="carousel-fixed-item">
-          <div class="container">
-            
-             <h1 class="white-text">Materialize Carousel</h1>
-          </div>
-       </div>
-       <div class="carousel-item red lighten-2 white-text" href="#one!">
-          <div class="container">
-             <h2>First Slide</h2>
-             <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
-          </div>
-       </div>
-       <div class="carousel-item amber darken-2 white-text" href="#two!">
-          <div class="container">
-             <h2>Second Slide</h2>
-             <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
-          </div>
-       </div>
-       <div class="carousel-item green white-text" href="#three!">
-          <div class="container">
-             <h2>Third Slide</h2>
-             <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
-          </div>
-       </div>
-       <div class="carousel-item blue white-text" href="#four!">
-          <div class="container">
-             <h2>Fourth Slide</h2>
-             <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
-          </div>
-       </div>
-    </div>
-
+      </div>
+    </li>
+  </ul>
+</div>
 </div>
 
+
 <div class="container">
+  <h4  class="blue-text text-darken-2 center-align" id="recruiter">PAST RECRUITERS</h4>
+    <br>
+    <br>
+   <div class="customer-logos ">
+    <div class="slide"><img src="./assets/ibm.png"></div>
+      <div class="slide"><img src="./assets/or.jpg"></div>
+      <div class="slide"><img src="./assets/a.png"></div>
+      <div class="slide"><img src="./assets/jpm.png"></div>
+      <div class="slide"><img src="./assets/micro.jpg"></div>
+      <div class="slide"><img src="./assets/t.jpg"></div>
+      <div class="slide"><img src="./assets/g.jpg"></div>
+      <div class="slide"><img src="./assets/q.png"></div>
+      <div class="slide"><img src="./assets/uber.png"></div>
+      <div class="slide"><img src="./assets/go.png"></div>
+      <div class="slide"><img src="./assets/cog.jpeg"></div>
+      <div class="slide"><img src="./assets/lt.jpeg"></div>
+      <div class="slide"><img src="./assets/tata.jpg"></div>
+   </div>
+</div>
+
+
+<div class="container">
+  <hr>
   <div class="row">
         <div class="col s12 m4">
            <div class="icon-block">
@@ -239,84 +254,102 @@
      <br>
      <hr>
  </div>
-
-<div class="container">
-  <section id="director" class="scrollspy">
-     <div class="container-1" style="background-color:#eceff1;padding:10px;" >
-        <div class="row center-align">
-           <div class="col s12 l3">
-              <img src="./assets/f.png"/>
-           </div>
-           <div class="col s12 l9">
-              <h4  class="blue-text text-darken-2 center-align">Message from Director</h4>
-              <p>
-                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-                 versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-              </p>
-           </div>
-        </div>
-     </div>
-  </section>
 </div>
 
-
-<div class="container">
-  <section id="dean" class="scrollspy">
-     <div class="container-1" style="background-color:#eceff1;padding:10px;" >
-        <div class="row">
-           <div class="col s12 l3 center-align">
-              <img src="./assets/f.png"/>
-           </div>
-           <div class="col s12 l9" >
-              <h4  class="blue-text text-darken-2 center-align" >Message from Dean</h4>
-              <p>
-                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-                 versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-              </p>
-           </div>
+ <div class="container">
+  <h4  class="blue-text text-darken-2 center-align" id="recruiter">PLACEMENT PROCEDURE</h4>
+  <br>
+  <br>
+  <div class="timeline">
+    
+    <div class="timeline-event">
+      <div class="card timeline-content">
+        <div class="card-image waves-effect waves-block waves-light">
         </div>
-     </div>
-  </section>
+        <div class="card-content teal white-text">
+          <p>TRAINING AND PLACEMENT CELL INVITES COMPANIES IN CAMPUS</p>
+        </div>
+      </div>
+       
+      <div class="timeline-badge red white-text"><i class="material-icons">insert_invitation</i></div>
+    </div>
+    
+    
+    <div class="timeline-event">
+      <div class="card timeline-content">
+        <div class="card-image waves-effect waves-block waves-light">
+        </div>
+        <div class="card-content teal white-text">
+          <p>INTRESTED COMPANIES FILL THE CPI (CAMPUS PLACEMENT INFORMATION) FORM AND SUBMIT TO THE PLACEMENT SECTION</p>
+        </div>
+      </div>
+      <div class="timeline-badge red white-text"><i class="material-icons">create</i></div>
+    </div>
+    
+    
+    <div class="timeline-event">
+      <div class="card timeline-content">
+        <div class="card-image waves-effect waves-block waves-light">
+        </div>
+        <div class="card-content teal white-text">
+          <p>THE CPI IS MADE AVAILABLE TO THE STUDENTS, ALONG WITH THE INFORMATION FURNISHED BY THE COMPANY SUCH AS DATE PACKAGING ETC  </p>
+        </div>
+      </div>
+      <div class="timeline-badge red white-text"><i class="material-icons">assignment</i></div>
+    </div>
 
-</div>
 
-
-<div class="container">
-  <hr>
-  <br>
-  <br>
-  <section id="about" class="scrollspy">
-  <div class="container-1 center-align" style="background-color:#eceff1;padding:10px">
-     <h4  class="blue-text text-darken-2 center-align">About Us </h4>
-     <p>
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-     </p>
-     <p>
-        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-     </p>
+          
+    
+    <div class="timeline-event">
+      <div class="card timeline-content">
+        <div class="card-image waves-effect waves-block waves-light">
+        </div>
+        <div class="card-content teal white-text">
+          <p>THE WILLING STUDENT DATE BASE IS SHARED WITH THE COMPANY FOR PRIOR SHORTLISTING. IF REQUIRED</p>
+        </div>
+      </div>
+      <div class="timeline-badge red white-text"><i class="material-icons">folder_shared</i></div>
+    </div>
+    
+    
+    <div class="timeline-event">
+      <div class="card timeline-content">
+        <div class="card-image waves-effect waves-block waves-light">
+          
+        </div>
+        <div class="card-content teal white-text">
+          <p>THE PLACEMENT SECTION AND COMPANIES COORDINATE TO FIX A CONVENIENT DATE FOR RECRUITMENT PROCEDURE VIZ. PRE PLACEMENT TEST ONLINE/PEN PAPER TEST AND INTERVIEW OF THE SHORTLISTED STUDENT</p>
+        </div>
+      </div>
+      <div class="timeline-badge red white-text"><i class="material-icons">date_range</i></div>
+    </div>
+    
+    <div class="timeline-event">
+      <div class="card timeline-content">
+        <div class="card-image waves-effect waves-block waves-light">
+        </div>
+        <div class="card-content teal white-text">
+          <p>THE COMPANY/ORGANISATION IS REQUIRED TO FURNISH THE FINAL LIST OF SELECTED STUDENT AT THE END OF PROCESS</p>
+        </div>
+      </div>
+      <div class="timeline-badge red white-text"><i class="material-icons">event_available</i></div>
+    </div>
+    
+    <div class="timeline-event">
+      <div class="card timeline-content">
+        <div class="card-image waves-effect waves-block waves-light">
+        </div>
+        <div class="card-content teal white-text">
+          <p>THE SELECTED STUDENT ARE PROVIDED WITH THE LETTER OF INTERNET AND JOINS THE COMPANY IN THE STIPULATED DATE</p>
+        </div>
+      </div>
+      <div class="timeline-badge red white-text"><i class="material-icons">flag</i></div>
+   
+    </div>
 
   </div>
-</section>
 </div>
-
-
-
-<div class="container">
-  <section id="vission" class="scrollspy">
-  <div class="container-1 center-align" style="background-color:#eceff1;padding:20px;">
-    <h4  class="blue-text text-darken-2 center-align">Vission & Mission </h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-  Why do we use it?
-  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-</p>
-
-</div>
-</section>
-</div>
-
-
 
 
   <footer class="page-footer" style="background-color:#001333;">
@@ -368,10 +401,13 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
-<script src="js/scroll.js"></script>
+<script src="js/homeslick.js"></script>
+
+
 
 
 
