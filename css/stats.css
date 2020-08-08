@@ -1,4 +1,17 @@
 .data{
     padding-top: 25px;
 }
+.wrapper {
+    padding-left: 70px !important;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .wrapper {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        padding-bottom: 10px;
+    }
+}
 
