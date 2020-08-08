@@ -2,13 +2,13 @@
     padding-top: 25px;
 }
 
-.container { 
+#pie { 
    width : 300px !important; 
    height: 300px !important;
 }
 
 @media only screen and (max-width: 400px) {
-   .container { 
+    #pie { 
       width : 250px !important; 
       height: 250px !important;
       padding-bottom: 20px;
