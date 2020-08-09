@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	var options = {
 		// legend: false,
-		responsive: false
+		responsive: true
 	};
 	new Chart($("#canvas1"), {
 		type: 'doughnut',
@@ -30,7 +30,7 @@ $(document).ready(function(){
 		]
 		}]
 	},
-		options: { responsive: false }
+		options: { responsive: true}
 	});           
 });
 // Doughnut Chart 

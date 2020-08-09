@@ -2,3 +2,15 @@
     padding-top: 25px;
 }
 
+#pie { 
+   width : 300px !important; 
+   height: 300px !important;
+}
+
+@media only screen and (max-width: 400px) {
+    #pie { 
+      width : 250px !important; 
+      height: 250px !important;
+      padding-bottom: 20px;
+   }
+ }
